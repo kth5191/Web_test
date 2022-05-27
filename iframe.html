@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body onload="time()">
+	<div id="obj"></div>
+
+	<script type="text/javascript">
+		function time()
+		{
+			var obj = document.getElementById("obj");
+			var current = new Date();
+			obj.innerHTML = current.toLocaleTimeString();
+			setTimeout("time()",1000);
+		}
+	</script>
+
+</body>
+</html>
